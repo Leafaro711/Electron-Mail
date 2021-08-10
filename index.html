@@ -32,8 +32,26 @@
             display: block;
         }
 
+        .header__logo{
+            padding-top: 10px;
+        }
+
         table td {
             border-collapse: collapse;
+        }
+
+        th, td{
+            height: auto;
+            padding: 0 10px;
+        }
+
+        th{
+            font-size: 21px;
+            font-weight: 700;
+            line-height: 30px;
+            padding: 5px 40px;
+            height: auto;
+            color: #3B4549;
         }
 
         table {
@@ -50,7 +68,6 @@
         .mainTable{
             width: 600px;
             height: 600px;
-            padding: 5%;
             background: whitesmoke;
             margin: 0 auto;
         }
@@ -75,13 +92,27 @@
         }
 
         .footer-div{
-            background: rgba(109, 185, 219, 0.08);
+            background: #6D99DB;
             border-radius: 5px;
-            padding: 20px;
+        }
+
+        .footer__btn{
+            padding-top: 15px;
         }
 
         b{
             font-weight: 700;
+        }
+
+        .clock{
+            padding-bottom: 10px;
+        }
+
+        .main-text{
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 18px;
+            color: #3B4549;
         }
 
         span{
@@ -92,8 +123,16 @@
             color: #FF9513;
         }
 
-        @media screen and (min-width: 320px) {
-            
+        @media screen and (min-width: 320px) and (max-width: 420px) {
+            .mainTable{
+                max-width: 414px;
+                width: auto;
+                height: auto;
+            }
+
+            td{
+                padding: auto;
+            }
         }
 
     </style>
@@ -102,7 +141,7 @@
 <body style="margin: 0; padding: 0;">
     <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ededed" class="mainTable">
         <tr>
-            <td align="center">
+            <td align="center" class="header__logo">
                 <img src="./img/ucapitals_logo.png" alt="logo" class="logo">
             </td>
         </tr>
@@ -128,7 +167,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td align="center">
+                                    <td align="center" class="main-text">
                                         Independência e estabilidade financeira sem limitações de horário
                                     </td>
                                 </tr>
@@ -142,7 +181,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td align="center">
+                                    <td align="center" class="main-text">
                                         Seu dinheiro multiplica-se a toda hora, desde a tela do seu computador ou celular.
                                     </td>
                                 </tr>
@@ -151,12 +190,12 @@
                         <td width="33%">
                             <table>
                                 <tr>
-                                    <td align="center">
+                                    <td align="center" class="clock">
                                         <img src="./icon//clock.png" alt="">
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td align="center">
+                                    <td align="center" class="main-text">
                                         Com apenas 1 hora por dia é suficiente
                                     </td>
                                 </tr>
@@ -175,7 +214,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td align="center">
+                        <td align="center" class="footer__btn">
                             <button>
                                 BAIXAR
                             </button>
