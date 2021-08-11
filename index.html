@@ -61,6 +61,13 @@
             background: #ededed;
         }
 
+        table {border-collapse:separate;}
+        a, a:link, a:visited {text-decoration: none; color: #FF9513;}
+        a:hover {text-decoration: underline;}
+        h2,h2 a,h2 a:visited,h3,h3 a,h3 a:visited,h4,h5,h6,.t_cht {color:#000 !important;}
+        .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td {line-height: 100%;}
+        .ExternalClass {width: 100%;}
+
         .logo{
             margin: 0 auto;
             width: 117px;
@@ -127,6 +134,11 @@
             color: #FF9513;
         }
 
+        button:hover{
+            cursor: pointer;
+            opacity: 0.7;
+        }
+
         @media screen and (min-width: 320px) and (max-width: 420px) {
             .mainTable{
                 max-width: 414px;
@@ -146,7 +158,9 @@
     <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ededed" class="mainTable">
         <tr>
             <td align="center" class="header__logo">
-                <img src="https://github.com/Leafaro711/Electron-Mail/blob/dev/img/ucapitals_logo.png?raw=true" alt="logo" class="logo">
+                <a href="">
+                    <img src="https://github.com/Leafaro711/Electron-Mail/blob/dev/img/ucapitals_logo.png?raw=true" alt="logo" class="logo">
+                </a>
             </td>
         </tr>
         <tr>
@@ -155,7 +169,7 @@
             </th>
         </tr>
         <tr>
-            <td>
+            <td align="center">
                 <img src="https://github.com/Leafaro711/Electron-Mail/blob/dev/img/pic.png?raw=true" alt="" class="image">
             </td>
         </tr>
@@ -214,14 +228,16 @@
                 <table class="footer footer-div" width="100%">
                     <tr>
                         <td align="center">
-                            <b>Leia este livro</b> e conheça os pilares de como negociar e <span>ganhar dinheiro!</span>
+                            <b>Leia este livro</b> e conheça os pilares de como negociar e <span><a href="">ganhar dinheiro!</a></span>
                         </td>
                     </tr>
                     <tr>
                         <td align="center" class="footer__btn">
-                            <button>
-                                BAIXAR
-                            </button>
+                            <a href="">
+                                <button>
+                                    BAIXAR
+                                </button>
+                            </a>
                         </td>
                     </tr>
                 </table>
